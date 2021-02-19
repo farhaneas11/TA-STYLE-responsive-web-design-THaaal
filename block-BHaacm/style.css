@@ -1,0 +1,225 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* variables */
+/*:root {
+   
+}/*
+/*Container */
+.container{margin: 0px auto;
+    max-width:1320px;
+    padding: 0px 32px;
+    width: 100%;
+}
+
+
+/* resets  */
+*::before,*::after {
+box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+ /* body   */
+a { 
+    text-decoration: none;
+}
+
+
+body { 
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+body p{
+    line-height: 1.7;
+}
+body a:hover{
+    color: wheat;
+}
+
+/* flex  */
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex1 {
+    display: flex;
+}
+/* common  */
+.common-p p{
+    font-size: 0.8rem;
+    color: grey;
+    margin: 1rem 0rem;
+}
+
+/* header  */
+.header {
+    width: 100%;
+    padding: 1rem 2rem;
+    background-color: #222946;
+}
+.header img{
+    font-size: 1.5rem;
+}
+.nav-head li{
+    margin-right: 3rem;
+}
+.nav-head a{
+    font-size: 1rem;
+    color: white;
+}
+/* main  */
+/* one  */
+.width50 {
+    flex:0 1 50%;
+    padding: 0rem 2rem;
+}
+.one {
+    
+    padding: 2rem 0rem;
+    background-color: #E9ECFC;
+}
+.one h1{
+    font-size: 2.6rem;
+    color: black;
+    font-weight: 700;
+}
+.one button{
+    background-color: #55C17E;
+    color: rgb(240, 236, 236);
+    font-size: 1rem;
+    border: 0px;
+    padding: 0.9rem 1.2rem;
+}
+.one img{
+    height: 100%;
+    object-fit: cover;
+    -o-object-fit: cover;
+}
+/* two  */
+.two {
+    
+    padding: 2rem 0rem;
+    background-color: white;
+}
+.width30 {
+    margin: 1%;
+    flex:0 1 30%;
+}
+.two h2{
+    font-size: 2rem;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+}
+.two h3{
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+.two button{
+    background-color: #55C17E;
+    color: rgb(240, 236, 236);
+    font-size: 1rem;
+    border: 0px;
+    padding: 0.5rem;
+}
+
+/*footer*/
+.footer {
+   
+    padding: 1rem 0rem;
+    background-color: #222946;
+}
+.footer small{
+    color: white;
+    font-size: 1rem;
+}
+.nav-foot li{
+    margin-right: 1rem;
+}
+.nav-foot a i{
+    font-size: 1.3rem;
+    
+    color:white;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+    .flex{
+        
+        flex-direction: column;
+        align-items: center;
+        margin: 24px 0px;
+    }
+    .flex1 {
+        flex-direction: column;
+    }
+    .width30, .width50{
+        flex: 1 1 100%;
+        margin: 20px 0px;
+    }
+    .flex-reverse {
+        flex-direction: column-reverse;
+    }
+    .common-p {
+        font-size: 15px;
+    }
+}
