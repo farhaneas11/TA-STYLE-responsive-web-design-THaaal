@@ -51,9 +51,10 @@ table {
    
 }/*
 /*Container */
-.container{margin: 0px auto;
+.container{
+    margin: 0px auto;
     max-width:1320px;
-    padding: 0px 32px;
+    padding: 0px 2rem;
     width: 100%;
 }
 
@@ -61,6 +62,8 @@ table {
 /* resets  */
 *::before,*::after {
 box-sizing: border-box;
+margin: 0;
+padding: 0;
 }
 
 html{
@@ -103,7 +106,7 @@ body a:hover{
 /* header  */
 .header {
     width: 100%;
-    padding: 1rem 2rem;
+    padding: 1rem 0rem;
     background-color: #222946;
 }
 .header img{
@@ -124,7 +127,7 @@ body a:hover{
 }
 .one {
     
-    padding: 2rem 0rem;
+    padding: 2rem 0;
     background-color: #E9ECFC;
 }
 .one h1{
@@ -147,7 +150,7 @@ body a:hover{
 /* two  */
 .two {
     
-    padding: 2rem 0rem;
+    padding: 2rem 0;
     background-color: white;
 }
 .width30 {
@@ -193,7 +196,10 @@ body a:hover{
     color:white;
 }
 
+.widthfull {
+    width: 100%;
 
+}
 
 
 
@@ -211,6 +217,7 @@ body a:hover{
     }
     .flex1 {
         flex-direction: column;
+        flex-wrap: wrap;
     }
     .width30, .width50{
         flex: 1 1 100%;
@@ -218,8 +225,13 @@ body a:hover{
     }
     .flex-reverse {
         flex-direction: column-reverse;
+        flex-wrap: wrap;
     }
     .common-p {
         font-size: 15px;
+    }
+    
+    .nav-foot,.nav-head{
+        margin-top: 10px;
     }
 }
